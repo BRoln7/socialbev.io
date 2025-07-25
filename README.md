@@ -1,4 +1,8 @@
 # Academic Project Page Template
+
+![readme](static/readme.png)
+
+
 This is an academic paper project page template.
 
 
