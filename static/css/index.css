@@ -135,3 +135,68 @@ body {
 
 
 
+
+.image-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.image-item {
+  flex: 1;
+  text-align: center;
+  max-width: 48%;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+
+/* 样式设置 */
+.video-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* 行与行之间的间隔 */
+}
+
+.video-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* 视频之间的间隔 */
+}
+
+.video-item {
+  flex: 1; /* 每个视频项平分父容器空间 */
+  text-align: center; /* 文本居中 */
+  max-width: 48%; /* 限制每个视频项的最大宽度，调整为二分之一 */
+  margin: auto; /* 确保视频项在行内居中 */
+}
+
+.video-item video {
+  width: 100%; /* 视频宽度占满容器 */
+  height: auto; /* 自动调整高度 */
+  border-radius: 8px; /* 可选：添加圆角 */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 可选：添加阴影 */
+}
+
+.subtitle {
+  margin-top: 10px; /* 标题与视频的间隔 */
+  font-size: 16px; /* 字体大小 */
+  color: #333; /* 字体颜色 */
+}
