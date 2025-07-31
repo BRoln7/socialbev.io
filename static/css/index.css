@@ -189,7 +189,7 @@ body {
 }
 
 .video-item video {
-  width: 100%; /* 视频宽度占满容器 */
+  width: 80%; /* 视频宽度占满容器 */
   height: auto; /* 自动调整高度 */
   border-radius: 8px; /* 可选：添加圆角 */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 可选：添加阴影 */
