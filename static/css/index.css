@@ -169,51 +169,41 @@ body {
 
 
 /* 样式设置 */
+/* 视频 gallery 父容器 */
 .video-gallery {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* 行与行之间的间隔 */
+  gap: 2rem; /* 每个 video-row 的间距 */
 }
 
+/* 每一行的视频容器 */
 .video-row {
   display: flex;
-  justify-content: space-between;
-  gap: 20px; /* 视频之间的间隔 */
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* 当空间不足时自动换行 */
+  gap: 1.5rem;     /* 视频间水平间距 */
+  justify-content: center; /* 居中对齐 */
 }
 
+/* 单个视频 item */
 .video-item {
-  flex: 1;
-  text-align: center;
-  max-width: 48%;
-  margin: auto;
+  flex: 1 1 300px; /* 最小 300px，自动伸缩 */
+  max-width: 400px; /* 最大宽度限制 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* iframe 视频容器（16:9比例盒） */
+/* iframe 容器，保持 16:9 比例 */
 .video-container {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* 16:9 比例 */
-  height: 0;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 高宽比 */
 }
 
-/* 内部的 YouTube 播放器 iframe */
 .video-container iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  border: none;
-  border-radius: 8px;
-}
-
-/* 保留原本的 subtitle 样式 */
-.subtitle {
-  margin-top: 10px;
-  font-size: 16px;
-  color: #333;
 }
