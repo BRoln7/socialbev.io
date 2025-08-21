@@ -187,7 +187,8 @@ body {
 
 .video-item .subtitle {
   font-size: 1.5rem;  /* 或者 24px */
-  font-weight: 600;   /* 可选，加粗 */
+  /* font-weight: 400;    */
+  /* 可选，加粗 */
   text-align: center; /* 保证居中 */
   margin-top: 0.5rem; /* 和视频保持距离 */
 }
