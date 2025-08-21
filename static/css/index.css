@@ -178,8 +178,8 @@ body {
 }
 
 .video-item {
-  flex: 1 1 300px;  /* 最小 300px，自动伸缩 */
-  max-width: 400px; /* 保持一致大小 */
+  flex: 1 1 400px;  /* 最小 300px，自动伸缩 */
+  max-width: 600px; /* 保持一致大小 */
   display: flex;
   flex-direction: column;
   align-items: center;
