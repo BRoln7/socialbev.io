@@ -176,23 +176,26 @@ body {
   justify-content: center;
 }
 
-/* 自动适应列数 */
-.video-row.two-columns {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+/* 3 个视频一行 */
+.video-row.three-videos {
+  grid-template-columns: repeat(3, 1fr);
 }
 
-/* 每个视频 item */
+/* 4 个视频两行，每行两个 */
+.video-row.four-videos {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .video-item {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* iframe 容器，保持 16:9 */
 .video-container {
   position: relative;
   width: 100%;
-  padding-top: 56.25%;
+  padding-top: 56.25%; /* 16:9 */
 }
 
 .video-container iframe {
