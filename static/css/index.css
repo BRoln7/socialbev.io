@@ -170,34 +170,29 @@ body {
 
 /* 样式设置 */
 /* 视频 gallery 父容器 */
-.video-gallery {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem; /* 每个 video-row 的间距 */
-}
-
-/* 每一行的视频容器 */
 .video-row {
-  display: flex;
-  flex-wrap: wrap; /* 当空间不足时自动换行 */
-  gap: 1.5rem;     /* 视频间水平间距 */
-  justify-content: center; /* 居中对齐 */
+  display: grid;
+  gap: 1.5rem;
+  justify-content: center;
 }
 
-/* 单个视频 item */
+/* 自动适应列数 */
+.video-row.two-columns {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* 每个视频 item */
 .video-item {
-  flex: 1 1 300px; /* 最小 300px，自动伸缩 */
-  max-width: 400px; /* 最大宽度限制 */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* iframe 容器，保持 16:9 比例 */
+/* iframe 容器，保持 16:9 */
 .video-container {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 高宽比 */
+  padding-top: 56.25%;
 }
 
 .video-container iframe {
