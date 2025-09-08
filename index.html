@@ -129,42 +129,28 @@
 <!-- End youtube video -->
 <section class="section" style="padding-top: 0rem; padding-bottom: 0rem;">
   <div class="container">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <div class="publication-image">
-          <img src="static/images/cover.png" alt="Overview" style="width:60%;">
-          <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #555;">
-            The robot is navigating in a shopping mall, required to avoid pedestrians in constrained spaces. 
-            Our approach enables the robot extract visual feature from complex social contexts, which facilitates to realize the socially compliant navigation.
-          </p>
-        </div>
+    <div class="columns is-vcentered">
+      
+      <!-- 左边文字 -->
+      <div class="column is-half">
+        <h2 class="title is-4">Overview</h2>
+        <p style="font-size: 1rem; color: #555; text-align: justify;">
+          Figure 1: Overview of the Social-BEV framework. 
+          It generates intention-aware scene representations from egocentric RGB-D inputs, 
+          enhancing BEV features with pedestrian pose information 
+          to improve socially compliant navigation.
+        </p>
       </div>
+      
+      <!-- 右边图片 -->
+      <div class="column is-half has-text-centered">
+        <img src="static/images/cover.png" alt="Overview" style="width:80%; border-radius: 8px;">
+      </div>
+
     </div>
   </div>
 </section>
 
-
-
-
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Effective social navigation requires the robot to develop a comprehensive understanding of the surrounding social context. However, existing methods overly simplify scene representations by reducing them to relative coordinates on a 2D plane. 
-            In this article, we propose Social-BEV, which generates intention-aware scene representations by compressing egocentric RGB-D inputs into unified state embeddings. It enhances Bird’s-Eye View (BEV) representations by extracting features of pedestrian poses, prioritizing the human-robot-environment interaction for policy learning. 
-            Simulation and real-world experiments validate that our task-oriented visual scene representations support zero-shot sim-to-real transfer and yield promising navigation performance in both point-to-point crowd navigation and long-distance human-aware navigation scenarios. 
-            Experiments demonstrate that our navigation policy achieves superior performance over baselines with respect to success rate, navigation efficiency, and pedestrian disturbance metrics.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 <!-- End paper abstract -->
 
 <!-- Image gallery -->
