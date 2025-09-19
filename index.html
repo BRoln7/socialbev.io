@@ -218,30 +218,37 @@
     <div class="container">
       <div class="video-gallery">
 
+        <!-- 标题和分割线 -->
+        <div class="has-text-centered">
+          <h2 class="title is-3">Comparison with baselines</h2>
+          <hr style="width: 60%; margin: 0.5rem auto 1.5rem auto; border-top: 1px solid #ccc;">
+        </div>
 
-    <!-- 标题和分割线 -->
-    <div class="has-text-centered">
-      <h2 class="title is-3">Comparison with baselines</h2>
-      <hr style="width: 60%; margin: 0.5rem auto 1.5rem auto; border-top: 1px solid #ccc;">
-    </div>
-
-        <div class="video-row">
-          <div class="video-item">
-            <div class="video-container">
-              <iframe src="https://www.youtube.com/embed/BB0ys1LlO7Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <!-- 视频 + 图片 横向排列 -->
+        <div class="video-row" style="display:flex; gap:1.5rem; align-items:flex-start;">
+          
+          <!-- 视频部分 -->
+          <div class="video-item" style="flex:1;">
+            <div class="video-container" style="position:relative; width:100%; aspect-ratio:16/9;">
+              <iframe src="https://www.youtube.com/embed/BB0ys1LlO7Y"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen
+                style="width:100%; height:100%; border-radius:8px;">
+              </iframe>
             </div>
-            <h2 class="subtitle has-text-centered">
+            <h2 class="subtitle has-text-centered" style="margin-top:1rem;">
               Comparison experiment with baselines DRL-VO, SARL*, and DWA in the same scenario, involving four SFM pedestrians and nine static obstacles.
             </h2>
           </div>
-        </div>
 
-        <div class="image-item">
-          <div class="image-container">
-            <img src="static/images/table1.png" alt="Comparison results">
+          <!-- 图片部分（缩小） -->
+          <div class="image-item" style="width:260px;">
+            <img src="static/images/table1.png" alt="Comparison results"
+              style="width:100%; height:auto; border-radius:8px;">
           </div>
+
         </div>
-      </div>
 
       </div>
     </div>
