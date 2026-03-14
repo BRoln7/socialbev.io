@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Social-BEV</title>
+  <title>iCrowdNav</title>
   <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -51,7 +51,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Social-BEV: Learning Socially Compliant Robot Navigation via Intention-Aware Scene Representations</h1>
+          <h1 class="title is-1 publication-title">Learning Robot Visual Navigation in Crowds via Intention-Aware Scene Representations</h1>
           <div class="is-size-5 publication-authors">
             <!-- Paper authors -->
               <span class="author-block">
@@ -87,7 +87,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/BRoln7/socialbev_test" target="_blank"
+                    <a href="https://github.com/BRoln7/icrowdnav" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -108,7 +108,7 @@
               </span> -->
 
               <span class="link-block">
-                <a href="https://youtu.be/VlTX3BuToQQ" target="_blank"
+                <a href="https://youtu.be/8q0dhAiWCEA" target="_blank"
                    class="external-link button is-normal is-rounded is-danger">
                   <span class="icon">
                     <i class="fab fa-youtube"></i>
@@ -140,14 +140,13 @@
       <!-- 左边文字 -->
       <div class="column is-half">
         <p style="font-size: 1rem; color: #555; text-align: justify;">
-          Socially compliant navigation is essential for robots operating in human-populated environments, requiring them to proactively respond to human expectations.
-          Currently, deep reinforcement learning (DRL) offers a promising approach for learning navigation policies that adhere to complex social norms.
-          However, most of them rely on limited scene representations of the pedestrians' planar trajectory.
-          They oversimplify critical social and environmental contexts, resulting in poor generalization to complex and dynamic scenarios in the real-world.
-          To address this issue, Social-BEV, a novel intention-aware scene representation, is introduced to holistically encode social contexts from egocentric visual observations.
-          Our method employs two key components: a spatio-temporal encoder for extracting Bird’s-Eye View (BEV) features, and Intent-Interact Former (I$^2$Former) that infers pedestrian intentions from 3D poses to model human-robot interactions. 
-          These features are unified into a compact state embedding that supports effective DRL policy training. 
-          Extensive experiments show that our method achieves superior performance over baselines, and real-world deployment demonstrates vision-based socially compliant navigation in unseen crowded scenarios.
+          Robot crowd navigation requires the ability to infer human intentions while accounting for the structural constraints of the environment.
+          Currently, deep reinforcement learning (DRL) provides a promising method for learning navigation policies that understand human intentions.
+          However, most of them rely on limited scene representations, treating pedestrians as simple 2D points and ignoring rich visual cues from both humans and the environment.
+          To address this issue, iCrowdNav, a novel visual crowd navigation method with intention-aware scene representations, is introduced to encode behavioral and structural context from egocentric visual observations.
+          Our method employs two key components: a spatio-temporal encoder for extracting occupancy features of the scene, and Intent-Interact Former (I$^2$Former), an attention-based module that encodes human poses to infer pedestrians’ motion intentions.
+          These features are integrated into a compact state embedding that supports effective DRL policy training. 
+          Extensive experiments show that our method achieves superior performance over baselines, and real-world deployment demonstrates vision-based crowd navigation.
         </p>
       </div>
       
