@@ -159,7 +159,7 @@
           Currently, deep reinforcement learning (DRL) provides a promising method for learning navigation policies that understand human intentions.
           However, most of them rely on limited scene representations, treating pedestrians as simple 2D points and ignoring rich visual cues from both humans and the environment.
           To address this issue, iCrowdNav, a novel visual crowd navigation method with intention-aware scene representations, is introduced to encode behavioral and structural context from egocentric visual observations.
-          Our method employs two key components: a spatio-temporal encoder for extracting occupancy features of the scene, and Intent-Interact Former (I$^2$Former), an attention-based module that encodes human poses to infer pedestrians’ motion intentions.
+          Our method employs two key components: a spatio-temporal encoder for extracting occupancy features of the scene, and Intent-Interact Former (I<sup>2</sup>Former), an attention-based module that encodes human poses to infer pedestrians’ motion intentions.
           These features are integrated into a compact state embedding that supports effective DRL policy training. 
           Extensive experiments show that our method achieves superior performance over baselines, and real-world deployment demonstrates vision-based crowd navigation.
         </p>
@@ -183,7 +183,7 @@
     <img src="static/images/framework.jpg" alt="Experiment" 
          style="width:70%; border-radius: 8px;">
     <p style="margin-top: 0.5rem; font-size: 1rem; color: #555;">
-      Our method consists of three primary components: a feature extraction module, a feature fusion module, and a DRL network. It takes multi-timestep RGB-D images, pedestrian poses, and the robot’s internal states as inputs. In the representation encoding stage, the spatio-temporal encoder and the I^2Former extract intention-aware scene representations, which are then fused with the robot’s state embedding to form DRL state embedding and fed into the DRL policy for navigation.
+      Our method consists of three primary components: a feature extraction module, a feature fusion module, and a DRL network. It takes multi-timestep RGB-D images, pedestrian poses, and the robot’s internal states as inputs. In the representation encoding stage, the spatio-temporal encoder and the I<sup>2</sup>Former extract intention-aware scene representations, which are then fused with the robot’s state embedding to form DRL state embedding and fed into the DRL policy for navigation.
     </p>
   </div>
 </section>
